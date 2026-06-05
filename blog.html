@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boardwave — Каталог</title>
+<link rel="stylesheet" href="blog-style.css">
+  </head>
+
+  <body>
+    <div class="root">
+      <header class="site-header">
+        <div class="logo-accent">
+          <a href="index.html"> <img src="logo.png" alt="Boardwave logo" /></a>
+        </div>
+        <button class="burger-menu" id="burgerBtn" aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-overlay" id="navOverlay"></div>
+        <nav class="site-nav" id="mainNav">
+          <button class="nav-close" id="navClose" aria-label="Закрыть меню">
+            &times;
+          </button>
+          <span>О нас</span>
+          <span>Каталог</span>
+          <span>Отзывы</span>
+          <span>Контакты</span>
+          <div class="header-icons">
+            <div class="icon-monitor">
+              <img src="shop.png" alt="shop" />
+            </div>
+            <div class="icon-user">
+              <img src="user.png" alt="user" />
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="navbar">
+        <div class="navbar__location">
+          <img src="icon.png" alt="" />
+          Москва, Россия
+          <img src="options.png" alt="" />
+        </div>
+        <div class="navbar__right">
+          <div class="navbar__search">
+            <img src="search.png" alt="" />
+            <span class="navbar__search-text">Поиск...</span>
+          </div>
+          <div class="navbar__burger-bg">
+            <img src="buttons-search.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <section class="hero-section-blog">
+        <img class="hero-img-blog" src="hero-blog.png" alt="Hero background" />
+        <img class="hero-photo-left" src="hero-photo-left.png" alt="" />
+        <div class="hero-content-blog">
+          <img class="hero-logo" src="hero-logo.png" alt="" />
+          <h1 class="hero-title">Летний интенсив</h1>
+          <button class="btn-cta">
+            <span class="btn-cta__text">Записаться</span>
+          </button>
+        </div>
+        <img class="hero-photo-right" src="hero-photo-right.png" alt="" />
+      </section>
+
+      <section class="decks-section">
+        <div class="decks-wrapper">
+          <h2 class="decks-title">Деки</h2>
+          <div class="decks-grid">
+            <article class="deck-card">
+              <img
+                class="deck-card__image"
+                src="deck1.jpg"
+                alt="Дека Rosy blush"
+              />
+              <div class="deck-card__body">
+                <p class="deck-card__name">Дека Rosy blush</p>
+                <span class="deck-card__price">3 300 ₽</span>
+                <div class="deck-card__actions">
+                  <button
+                    class="deck-card__btn"
+                    data-tooltip="В корзину"
+                    data-name="Дека Rosy blush"
+                    onclick="addToCart(this)"
+                  >
+                    <img src="shop.png" alt="В корзину" />
+                  </button>
+                  <button
+                    class="deck-card__btn"
+                    data-tooltip="В избранное"
+                    onclick="toggleFav(this)"
+                  >
+                    <img src="favorits.png" alt="В избранное" />
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="deck-card">
+              <img
+                class="deck-card__image"
+                src="deck2.jpg"
+                alt="Дека Arctic wave"
+              />
+              <div class="deck-card__body">
+                <p class="deck-card__name">Дека Prisoner</p>
+                <span class="deck-card__price">4500 ₽</span>
+                <div class="deck-card__actions">
+                  <button
+                    class="deck-card__btn"
+                    data-tooltip="В корзину"
+                    data-name="Дека Arctic wave"
+                    onclick="addToCart(this)"
+                  >
+                    <img src="shop.png" alt="В корзину" />
+                  </button>
+                  <button
+                    class="deck-card__btn"
+                    data-tooltip="В избранное"
+                    onclick="toggleFav(this)"
+                  >
+                    <img src="favorits.png" alt="В избранное" />
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="deck-card">
+              <img
+                class="deck-card__image"
+                src="deck3.jpg"
+                alt="Дека Forest green"
+              />
+              <div class="deck-card__body">
+                <p class="deck-card__name">Дека Skeleton</p>
+                <span class="deck-card__price">3000 ₽</span>
+                <div class="deck-card__actions">
+                  <button
+                    class="deck-card__btn"
+                    data-tooltip="В корзину"
+                    data-name="Дека Forest green"
+                    onclick="addToCart(this)"
+                  >
+                    <img src="shop.png" alt="В корзину" />
+                  </button>
+                  <button
+                    class="deck-card__btn"
+                    data-tooltip="В избранное"
+                    onclick="toggleFav(this)"
+                  >
+                    <img src="favorits.png" alt="В избранное" />
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="deck-card">
+              <img
+                class="deck-card__image"
+                src="deck4.jpg"
+                alt="Дека Midnight smoke"
+              />
+              <div class="deck-card__body">
+                <p class="deck-card__name">Дека Psychedalics</p>
+                <span class="deck-card__price">5800 ₽</span>
+                <div class="deck-card__actions">
+                  <button
+                    class="deck-card__btn"
+                    data-tooltip="В корзину"
+                    data-name="Дека Midnight smoke"
+                    onclick="addToCart(this)"
+                  >
+                    <img src="shop.png" alt="В корзину" />
+                  </button>
+                  <button
+                    class="deck-card__btn"
+                    data-tooltip="В избранное"
+                    onclick="toggleFav(this)"
+                  >
+                    <img src="favorits.png" alt="В избранное" />
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular-section">
+        <div class="popular-wrapper">
+          <h2 class="popular-title">Популярные товары</h2>
+          <div class="popular-grid">
+            <article class="popular-card">
+              <img
+                class="popular-card__image"
+                src="product1.jpg"
+                alt="Набор подшипников"
+              />
+              <div class="popular-card__body">
+                <p class="popular-card__name">
+                  Набор сиренево-золотых подшипников
+                </p>
+                <span class="popular-card__price">2 550 ₽</span>
+                <div class="popular-card__actions">
+                  <button
+                    class="popular-card__btn"
+                    data-tooltip="В корзину"
+                    data-name="Набор подшипников сиренево-золотых"
+                    onclick="addToCart(this)"
+                  >
+                    <img src="shop.png" alt="В корзину" />
+                  </button>
+                  <button
+                    class="popular-card__btn"
+                    data-tooltip="В избранное"
+                    onclick="toggleFav(this)"
+                  >
+                    <img src="favorits.png" alt="В избранное" />
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="popular-card">
+              <img
+                class="popular-card__image"
+                src="product2.jpg"
+                alt="Скейтборд China Jam"
+              />
+              <div class="popular-card__body">
+                <p class="popular-card__name">Скейтборд China Jam</p>
+                <span class="popular-card__price">7 800 ₽</span>
+                <div class="popular-card__actions">
+                  <button
+                    class="popular-card__btn"
+                    data-tooltip="В корзину"
+                    data-name="Скейтборд China Jam"
+                    onclick="addToCart(this)"
+                  >
+                    <img src="shop.png" alt="В корзину" />
+                  </button>
+                  <button
+                    class="popular-card__btn"
+                    data-tooltip="В избранное"
+                    onclick="toggleFav(this)"
+                  >
+                    <img src="favorits.png" alt="В избранное" />
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="popular-card">
+              <img
+                class="popular-card__image"
+                src="product3.jpg"
+                alt="Скейтборд Jart Involution"
+              />
+              <div class="popular-card__body">
+                <p class="popular-card__name">Скейтборд Jart Involution</p>
+                <span class="popular-card__price">10 500 ₽</span>
+                <div class="popular-card__actions">
+                  <button
+                    class="popular-card__btn"
+                    data-tooltip="В корзину"
+                    data-name="Скейтборд Jart Involution"
+                    onclick="addToCart(this)"
+                  >
+                    <img src="shop.png" alt="В корзину" />
+                  </button>
+                  <button
+                    class="popular-card__btn"
+                    data-tooltip="В избранное"
+                    onclick="toggleFav(this)"
+                  >
+                    <img src="favorits.png" alt="В избранное" />
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="popular-card">
+              <img
+                class="popular-card__image"
+                src="product4.jpg"
+                alt="Набор из 4 колёс"
+              />
+              <div class="popular-card__body">
+                <p class="popular-card__name">Набор из 4 колёс</p>
+                <span class="popular-card__price">1 950 ₽</span>
+                <div class="popular-card__actions">
+                  <button
+                    class="popular-card__btn"
+                    data-tooltip="В корзину"
+                    data-name="Набор из 4 колёс"
+                    onclick="addToCart(this)"
+                  >
+                    <img src="shop.png" alt="В корзину" />
+                  </button>
+                  <button
+                    class="popular-card__btn"
+                    data-tooltip="В избранное"
+                    onclick="toggleFav(this)"
+                  >
+                    <img src="favorits.png" alt="В избранное" />
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="popular-card">
+              <img
+                class="popular-card__image"
+                src="product5.jpg"
+                alt="Скейтборд Green psychedalics"
+              />
+              <div class="popular-card__body">
+                <p class="popular-card__name">Скейтборд Green psychedalics</p>
+                <span class="popular-card__price">9 500 ₽</span>
+                <div class="popular-card__actions">
+                  <button
+                    class="popular-card__btn"
+                    data-tooltip="В корзину"
+                    data-name="Скейтборд Green psychedalics"
+                    onclick="addToCart(this)"
+                  >
+                    <img src="shop.png" alt="В корзину" />
+                  </button>
+                  <button
+                    class="popular-card__btn"
+                    data-tooltip="В избранное"
+                    onclick="toggleFav(this)"
+                  >
+                    <img src="favorits.png" alt="В избранное" />
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="popular-card">
+              <img
+                class="popular-card__image"
+                src="product6.jpg"
+                alt="Дека Memdog"
+              />
+              <div class="popular-card__body">
+                <p class="popular-card__name">Дека Memdog</p>
+                <span class="popular-card__price">4 100 ₽</span>
+                <div class="popular-card__actions">
+                  <button
+                    class="popular-card__btn"
+                    data-tooltip="В корзину"
+                    data-name="Дека Memdog"
+                    onclick="addToCart(this)"
+                  >
+                    <img src="shop.png" alt="В корзину" />
+                  </button>
+                  <button
+                    class="popular-card__btn"
+                    data-tooltip="В избранное"
+                    onclick="toggleFav(this)"
+                  >
+                    <img src="favorits.png" alt="В избранное" />
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="popular-card">
+              <img
+                class="popular-card__image"
+                src="product7.jpg"
+                alt="Набор фиолетовых подшипников"
+              />
+              <div class="popular-card__body">
+                <p class="popular-card__name">Набор фиолетовых подшипников</p>
+                <span class="popular-card__price">2 800 ₽</span>
+                <div class="popular-card__actions">
+                  <button
+                    class="popular-card__btn"
+                    data-tooltip="В корзину"
+                    data-name="Набор фиолетовых подшипников"
+                    onclick="addToCart(this)"
+                  >
+                    <img src="shop.png" alt="В корзину" />
+                  </button>
+                  <button
+                    class="popular-card__btn"
+                    data-tooltip="В избранное"
+                    onclick="toggleFav(this)"
+                  >
+                    <img src="favorits.png" alt="В избранное" />
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="popular-card">
+              <img
+                class="popular-card__image"
+                src="product8.jpg"
+                alt="Набор для сборки скейтборда"
+              />
+              <div class="popular-card__body">
+                <p class="popular-card__name">Набор для сборки скейтборда</p>
+                <span class="popular-card__price">9 990 ₽</span>
+                <div class="popular-card__actions">
+                  <button
+                    class="popular-card__btn"
+                    data-tooltip="В корзину"
+                    data-name="Набор для сборки скейтборда"
+                    onclick="addToCart(this)"
+                  >
+                    <img src="shop.png" alt="В корзину" />
+                  </button>
+                  <button
+                    class="popular-card__btn"
+                    data-tooltip="В избранное"
+                    onclick="toggleFav(this)"
+                  >
+                    <img src="favorits.png" alt="В избранное" />
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <button class="load-more-btn">Загрузить ещё 50+</button>
+      </section>
+
+      <div class="bg-wrapper">
+        <img class="bg-img-1" src="skateboard-blog-1.png" alt="" />
+        <img class="bg-img-2" src="skateboard-blog-2.png" alt="" />
+        <img class="bg-img-3" src="skateboard-blog-3.png" alt="" />
+        <img class="bg-img-4" src="skateboard-blog-4.png" alt="" />
+      </div>
+
+      <div class="telegram-section">
+        <div class="deco-orange"><img src="deko_orange.png" alt="" /></div>
+        <div class="deco-purple"><img src="deko_purple.png" alt="" /></div>
+        <div class="telegram-text">
+          У нас также есть канал в телеграме, где мы делимся актуальными
+          новостями:
+        </div>
+        <button class="btn-blog">
+          <span class="btn-blog__text">Блог</span>
+        </button>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__col">
+            <div class="footer__col-title">Информация</div>
+            <ul class="footer__list">
+              <li>Доставка</li>
+              <li>Оплата</li>
+              <li>Условия соглашения</li>
+              <li>Политика безопасности</li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__col-title">Служба поддержки</div>
+            <ul class="footer__list">
+              <li>Личный кабинет</li>
+              <li>Закладки</li>
+              <li>Карта сайта</li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__col-title">Дополнительно</div>
+            <ul class="footer__list">
+              <li>Акции</li>
+              <li>Новинки</li>
+            </ul>
+          </div>
+
+          <div class="footer__col footer__col--contacts">
+            <div class="footer__col-title">Наши контакты:</div>
+            <ul class="footer__contacts-list">
+              <li class="footer__contact-row">
+                <img src="phone.png" alt="Телефон" />
+                <span>+7 (964) 828-58-11</span>
+              </li>
+              <li class="footer__contact-row">
+                <img src="mail.png" alt="Email" />
+                <span>boardwave@contact.ru</span>
+              </li>
+              <li class="footer__contact-row footer__contact-row--address">
+                <span class="footer__address-label">Наш адрес:</span>
+                <span class="footer__address-row">
+                  <img src="location.png" alt="Адрес" />
+                  <span>г. Москва, Малый проезд 5</span>
+                </span>
+              </li>
+              <li class="footer__contact-row">
+                <img src="clock.png" alt="Часы" />
+                <span>Заказы через корзину 24/7</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="cart-toast" id="cartToast"></div>
+
+    <script>
+      (function () {
+        var burgerBtn = document.getElementById("burgerBtn");
+        var mainNav = document.getElementById("mainNav");
+        var navClose = document.getElementById("navClose");
+        var navOverlay = document.getElementById("navOverlay");
+        var navLinks = mainNav.querySelectorAll("span");
+        var body = document.body;
+
+        function openMenu() {
+          mainNav.classList.add("active");
+          navOverlay.classList.add("active");
+          body.classList.add("no-scroll");
+        }
+        function closeMenu() {
+          mainNav.classList.remove("active");
+          navOverlay.classList.remove("active");
+          body.classList.remove("no-scroll");
+        }
+
+        if (burgerBtn) burgerBtn.addEventListener("click", openMenu);
+        if (navClose) navClose.addEventListener("click", closeMenu);
+        if (navOverlay) navOverlay.addEventListener("click", closeMenu);
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", closeMenu);
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && mainNav.classList.contains("active"))
+            closeMenu();
+        });
+      })();
+
+      var cart = [];
+      var toastTimer = null;
+
+      function addToCart(btn) {
+        var name = btn.getAttribute("data-name") || "Товар";
+        cart.push(name);
+        showToast("✓ Добавлено: " + name + " (" + cart.length + " в корзине)");
+        btn.style.background = "#7fe07f";
+        setTimeout(function () {
+          btn.style.background = "";
+        }, 900);
+      }
+
+      function toggleFav(btn) {
+        btn.classList.toggle("fav-active");
+        if (btn.classList.contains("fav-active")) {
+          btn.style.background = "#e07f7f";
+          showToast("♥ Добавлено в избранное");
+        } else {
+          btn.style.background = "";
+          showToast("Убрано из избранного");
+        }
+      }
+
+      function showToast(msg) {
+        var toast = document.getElementById("cartToast");
+        toast.textContent = msg;
+        toast.classList.add("show");
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () {
+          toast.classList.remove("show");
+        }, 2500);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boardwave</title>
+    <link rel="stylesheet" href="index-style.css">
+  </head>
+  <body>
+
+
+    <div class="root">
+      <header class="site-header">
+        <div class="logo-accent">
+          <img src="logo.png" alt="Boardwave logo" />
+        </div>
+        <button class="burger-menu" id="burgerBtn" aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-overlay" id="navOverlay"></div>
+        <nav class="site-nav" id="mainNav">
+          <button class="nav-close" id="navClose" aria-label="Закрыть меню">
+            &times;
+          </button>
+          <span>О нас</span>
+          <span> <a href="blog.html">Каталог</a></span>
+          <span>Отзывы</span>
+          <span>Контакты</span>
+          <div class="header-icons">
+            <div class="icon-monitor"><img src="shop.png" alt="shop" /></div>
+            <div class="icon-user"><img src="user.png" alt="user" /></div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="hero-section">
+        <img class="hero-img" src="hero.jpg" alt="Hero background" />
+        <div class="frame-white"><img src="line-3.png" alt="" /></div>
+        <div class="frame-orange-1"><img src="line.png" alt="" /></div>
+        <div class="frame-orange-2"><img src="line-2.png" alt="" /></div>
+        <div class="hero-content">
+          <div class="brand-title">BOARDWAvE</div>
+          <div class="hero-subtitle">
+            Boardwave — магазин, где можно найти всё самое необходимое для
+            катания на скейтборде, независимо от того, новичок вы или
+            профессионал.
+          </div>
+          <div class="btn-cta">
+            <div class="btn-cta__text">
+              <a style="color: black; text-decoration: none" href="blog.html"
+                >К товарам</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="history-section">
+        <div class="deco-rot-3"><img src="skateboard.png" alt="" /></div>
+        <div class="deco-rot-1"><img src="skateboard-2.png" alt="" /></div>
+        <div class="section-history fade-up">наша история</div>
+        <div class="history-layout">
+          <div class="history-left fade-up" data-delay="1">
+            <img class="history-img-3" src="photo-1.jpg" alt="" />
+            <div class="history-founding">
+              Наша компания основана в 2012 году Марком Страховым и Мишей
+              Волковым, двумя друзьями и поклонниками скейтбординга.<br />
+              Всё началось с продажи досок и ремонта скейтбордов на заказ.
+            </div>
+          </div>
+          <div class="history-right fade-up" data-delay="2">
+            <div class="history-text">
+              Через некоторое время была создана команда, к нам присоединились
+              люди, желающие поддержать начинающий бренд. Компанию назвали
+              Boardwave, легко и лаконично, чтобы быстро запоминалась. Тогда, в
+              2011 году, молодые парни даже не подразумевали, что их идея
+              воплотится в создание целого успешного маркетплейса.
+            </div>
+            <img class="history-img-1" src="photo-2.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="team-section">
+        <div class="deco-rot-2"><img src="skateboard-4.png" alt="" /></div>
+        <div class="deco-rot-4"><img src="skateboard-3.png" alt="" /></div>
+        <div class="section-team fade-up">наша команда</div>
+        <div class="team-member team-member--mark fade-up" data-delay="1">
+          <img class="team-mark-img" src="photo-3.jpg" alt="Марк Страхов" />
+          <div class="team-member__info">
+            <div class="team-member__name">Марк Страхов</div>
+            <div class="team-member__desc team-mark-desc">
+              Один из создателей бренда родом из Санкт-Петербурга, руководитель
+              компании. Следит за логистикой маркетплейса, знает всё о моделях
+              скейтбордов и их сборке. Марк позаботится о том, чтобы вы точно
+              остались довольны сделанным заказом.
+            </div>
+          </div>
+        </div>
+        <div class="team-member team-member--kirill fade-up" data-delay="2">
+          <div class="team-member__info" style="align-items: flex-end">
+            <div class="team-member__name">Кирилл Левин</div>
+            <div class="team-member__desc team-kirill-desc">
+              Кирилл увлекается скейтбордингом уже более 11 лет, отвечает за
+              сборку и ремонт запчастей для скейтбордов. Подскажет, какой
+              скейтборд лучше выбрать именно вам,<br />а также даст инструкцию,
+              как самому собрать модель.
+            </div>
+          </div>
+          <img class="team-kirill-img" src="photo-4.jpg" alt="Кирилл Левин" />
+        </div>
+        <div class="team-member team-member--david fade-up" data-delay="3">
+          <img class="team-david-img" src="photo-5.jpg" alt="Давид Мальцев" />
+          <div class="team-member__info">
+            <div class="team-member__name">Давид Мальцев</div>
+            <div class="team-member__desc team-david-desc">
+              Давид с самого детства участвует в соревнованиях по скейтбордингу.
+              На нашем сайте представлена коллекция видеогайдов, записанных
+              Давидом, где он подробно рассказывает про трюки и дает советы, как
+              быстрее научиться сохранять баланс, выполняя тот или иной элемент.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages-section">
+        <div class="section-advantages fade-up">ПРЕИМУЩЕСТВА</div>
+        <div class="mission-text fade-up" data-delay="1">
+          Мы всегда стараемся подстроиться под каждого покупателя. Наша миссия —
+          обеспечение вашего доверия. Искренность и надежность — ключевые слова
+          бренда.
+        </div>
+        <div class="advantages-row">
+          <div class="advantage-item fade-up" data-delay="2">
+            <div class="adv-num">1</div>
+            <div class="advantage-card">
+              <div class="advantage-card__text">
+                Компания позиционирует себя как наставник и всегда поможет
+                новичкам.
+              </div>
+            </div>
+          </div>
+          <div class="advantage-item fade-up" data-delay="3">
+            <div class="adv-num">2</div>
+            <div class="advantage-card">
+              <div class="advantage-card__text--flex">
+                Используем только высококачественные материалы
+              </div>
+            </div>
+          </div>
+          <div class="advantage-item fade-up" data-delay="4">
+            <div class="adv-num">3</div>
+            <div class="advantage-card">
+              <div class="advantage-card__text--3">
+                Ваша доска — как отпечаток пальца. На сайте есть возможность
+                создать собственный дизайн!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="telegram-section">
+        <div class="deco-orange"><img src="deko_orange.png" alt="" /></div>
+        <div class="deco-purple"><img src="deko_purple.png" alt="" /></div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__col">
+            <div class="footer__col-title">Информация</div>
+            <ul class="footer__list">
+              <li>Доставка</li>
+              <li>Оплата</li>
+              <li>Условия соглашения</li>
+              <li>Политика безопасности</li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__col-title">Служба поддержки</div>
+            <ul class="footer__list">
+              <li>Личный кабинет</li>
+              <li>Закладки</li>
+              <li>Карта сайта</li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__col-title">Дополнительно</div>
+            <ul class="footer__list">
+              <li>Акции</li>
+              <li>Новинки</li>
+            </ul>
+          </div>
+
+          <div class="footer__col footer__col--contacts">
+            <div class="footer__col-title">Наши контакты:</div>
+            <ul class="footer__contacts-list">
+              <li class="footer__contact-row">
+                <img src="phone.png" alt="Телефон" />
+                <span>+7 (964) 828-58-11</span>
+              </li>
+              <li class="footer__contact-row">
+                <img src="mail.png" alt="Email" />
+                <span>boardwave@contact.ru</span>
+              </li>
+              <li class="footer__contact-row footer__contact-row--address">
+                <span class="footer__address-label">Наш адрес:</span>
+                <span class="footer__address-row">
+                  <img src="location.png" alt="Адрес" />
+                  <span>г. Москва, Малый проезд 5</span>
+                </span>
+              </li>
+              <li class="footer__contact-row">
+                <img src="clock.png" alt="Часы" />
+                <span>Заказы через корзину 24/7</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        const burgerBtn = document.getElementById("burgerBtn");
+        const mainNav = document.getElementById("mainNav");
+        const navClose = document.getElementById("navClose");
+        const navOverlay = document.getElementById("navOverlay");
+        const navLinks = mainNav.querySelectorAll("span");
+        const body = document.body;
+
+        function openMenu() {
+          mainNav.classList.add("active");
+          navOverlay.classList.add("active");
+          body.classList.add("no-scroll");
+        }
+
+        function closeMenu() {
+          mainNav.classList.remove("active");
+          navOverlay.classList.remove("active");
+          body.classList.remove("no-scroll");
+        }
+
+        if (burgerBtn) burgerBtn.addEventListener("click", openMenu);
+        if (navClose) navClose.addEventListener("click", closeMenu);
+        if (navOverlay) navOverlay.addEventListener("click", closeMenu);
+
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", closeMenu);
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && mainNav.classList.contains("active")) {
+            closeMenu();
+          }
+        });
+      })();
+    </script>
+    <script>
+      (function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12 }
+        );
+
+        document.querySelectorAll(".fade-up").forEach((el) => {
+          observer.observe(el);
+        });
+      })();
+    </script>
+
+  </body>
+</html>
